@@ -324,15 +324,30 @@
     } else if it.level == 2 {
       v(0.8em)
       set text(size: 17pt, weight: "bold")
-      it
+      if it.numbering != none {
+        let num = numbering(it.numbering, ..counter(heading).at(it.location()))
+        [#num #h(1em) #it.body]
+      } else {
+        it.body
+      }
       v(0.4em)
     } else if it.level == 3 {
       v(0.4em)
       set text(size: 14pt, weight: "bold")
-      it
+      if it.numbering != none {
+        let num = numbering(it.numbering, ..counter(heading).at(it.location()))
+        [#num #h(0.9em) #it.body]
+      } else {
+        it.body
+      }
       v(0.2em)
     } else {
-      it
+      if it.numbering != none {
+        let num = numbering(it.numbering, ..counter(heading).at(it.location()))
+        [#num #h(0.8em) #it.body]
+      } else {
+        it.body
+      }
     }
   }
 

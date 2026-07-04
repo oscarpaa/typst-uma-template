@@ -22,6 +22,10 @@ Este es un texto con una anotación.#footnote[A#lorem(20)]
   caption: [Este es un rectángulo rojo],
 ) <fig>
 
+=== Dime
+==== Si
+===== Tu
+
 == #lorem(20)
 Como observamos en la figura @fig y como se resume en el capítulo @intro
 
