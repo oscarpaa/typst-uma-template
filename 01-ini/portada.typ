@@ -2,46 +2,44 @@
 
 #set align(center)
 
-#text(size: 16pt)[UNIVERSIDAD DE MÁLAGA ]
-#v(16pt)
+#text(size: 16pt)[#sc("Universidad de Málaga")]
+#v(8pt)
 #block(width: 100%)[
   #set par(leading: 0.7em) 
-  #text(size: 16pt)[ESCUELA TÉCNICA SUPERIOR DE \ INGENIERÍA DE TELECOMUNICACIÓN]
+  #text(size: 16pt)[#sc("Escuela Técnica Superior de") \ #sc("Ingeniería de Telecomunicación")]
 ]
 
-#v(2fr)
+#v(100pt)
 
-#text(size: 16pt)[
-  #smallcaps[TRABAJO FIN DE MÁSTER]
-]
+#text(size: 16pt)[TRABAJO FIN DE MÁSTER]
 
-#v(2fr)
+#v(77pt)
 
 // --- TÍTULO ---
 #block(width: 80%)[
   #set par(leading: 0.8em)
   #text(size: 24pt)[
-    #smallcaps(titlename)
+    #sc(titlename)
   ]
 ]
 
-#v(2fr)
+#v(85pt)
 
 // --- TITULACIÓN ---
 #block(width: 60%)[
   #set par(leading: 0.7em)
   #text(size: 16pt)[
-  #smallcaps[Máster en]
-  #smallcaps(titulacion)
-]]
+    #sc("Máster en " + titulacion)
+  ]
+]
 
-#v(2fr) 
+#v(75pt) 
 
 // --- AUTOR Y FECHA (Alineado a la derecha) ---
 #align(right)[
   #set text(size: 14pt)
-  #smallcaps(author) \
-  #smallcaps[Málaga, #anno]
+  #sc(author) \
+  #sc("Málaga, " + anno)
 ]
 
 #chapterend()
