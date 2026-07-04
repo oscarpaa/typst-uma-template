@@ -13,15 +13,7 @@
   link(label("acr_" + sigla_str))[#sigla]
 }
 
-#let hide_header = state("hide_header", false)
-#let chapterend() = {
-  hide_header.update(true)
-  pagebreak(to: "odd", weak: false)
-  hide_header.update(false)
-}
-
-#let section-type = state("section-type", "Capítulo")
-
+// Función para simular small capitalls 
 #let sc(body) = {
   context {
     let scaling = 0.8
@@ -41,6 +33,15 @@
     resultado.join()
   }
 }
+
+#let hide_header = state("hide_header", false)
+#let chapterend() = {
+  hide_header.update(true)
+  pagebreak(to: "odd", weak: false)
+  hide_header.update(false)
+}
+
+#let section-type = state("section-type", "Capítulo")
 
 #let index_style(doc) = {
   let last_chapter_loc = state("last_chapter_loc", none)
