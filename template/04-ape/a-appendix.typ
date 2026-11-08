@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "@preview/uma-tfe:0.1.0": *
 
 = Código
 #minitoc()
@@ -20,9 +20,10 @@ Aquí se detalla la jerarquía del proyecto como se menciona en @Intel4004
 
 
 #figure(
-  table(
-    columns: 2,
+  xtable(
+    columns: (1fr, 1fr),
     align: center + horizon,
+    [*Columna 1*], [*Columna 2*],
     [A], [A],
     [B], [B],
   ),

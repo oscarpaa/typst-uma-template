@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "@preview/uma-tfe:0.1.0": *
 
 #align(horizon)[
   #set align(right)

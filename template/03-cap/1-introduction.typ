@@ -1,9 +1,11 @@
-#import "../template.typ": *
+#import "@preview/uma-tfe:0.1.0": *
 
 = Introducción <intro>
 #minitoc()
 
 En este capítulo se presentará una introducción al TFM que incluirá una descripción del contexto tecnológico, una explicación de los objetivos y una visión general de la estructura de la memoria.
+
+#TODO[Describir el contexto del trabajo.]
 
 == Contexto tecnológico
 Este es un texto con una anotación.#footnote[A#lorem(20)]
